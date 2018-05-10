@@ -1,8 +1,9 @@
-# vcomponent
+# vui
 
-> the cli is use Packaging plugin for vue.(打包vue插件)
+> A Vue.js project
 
-### you can:
+## Build Setup
+
 ``` bash
 # install dependencies
 npm install
@@ -12,6 +13,6 @@ npm run dev
 
 # build for production with minification
 npm run build
+```
 
-# Packaging plugin
-npm run dist
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
