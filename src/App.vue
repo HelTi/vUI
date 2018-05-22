@@ -4,46 +4,35 @@
       <h3>component</h3>
     </section>
     <section>
-      <v-popup></v-popup>
+      <button @click="openPopup">open-popup</button>
+    </section>
+    <section>
+      <v-popup :visible.sync="popupVisible">
+        <div style="height: 120px;">11</div>
+      </v-popup>
     </section>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
+  export default {
+    name: 'app',
+    data() {
+      return {
+        popupVisible: false
+      }
+    },
+    methods: {
+      openPopup() {
+        this.popupVisible = true;
+        console.log(this.popupVisible)
+      }
     }
   }
-}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  #app {
+    padding: 5px;
+  }
 </style>
