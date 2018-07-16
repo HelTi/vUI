@@ -12,6 +12,9 @@
       </v-popup>
       <v-message-box></v-message-box>
     </section>
+    <section>
+      <v-loading></v-loading>
+    </section>
   </div>
 </template>
 
