@@ -1,10 +1,19 @@
 <template>
-    $END$
+    <div v-show="value" class="v-message-box">
+      <p>messageBox</p>
+      <div>no</div>
+      <div>ok</div>
+    </div>
 </template>
 
 <script>
   export default {
-    name: "messageBox"
+    name: "vMessageBox",
+    data(){
+      return {
+        value:false
+      }
+    }
   }
 </script>
 

@@ -10,6 +10,7 @@
       <v-popup :visible.sync="popupVisible">
         <div style="height: 120px;">11</div>
       </v-popup>
+      <v-message-box></v-message-box>
     </section>
   </div>
 </template>

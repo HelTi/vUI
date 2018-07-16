@@ -2,9 +2,12 @@
  * Created by helti on 2018/5/10.
  */
 import {VPopup} from './component/popup'
+import {vMessageBox} from './component/messageBox'
+
 
 const install = (Vue) =>{
   Vue.component(VPopup.name,VPopup)
+  Vue.component(vMessageBox.name,vMessageBox)
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -13,5 +16,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  VPopup
+  VPopup,
+  vMessageBox
 }
